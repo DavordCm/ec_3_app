@@ -40,7 +40,7 @@ export class loginComponent {
 
     try {
       await this.authService.login(email, password);
-      this.router.navigate(['/dashboard']); // o la ruta a donde quieras ir
+      this.router.navigate(['/dashboard']);
     } catch (error: any) {
       this.errorMessage = 'Correo o contraseña incorrectos';
     }
